@@ -49,26 +49,32 @@ The provided code snippet is a comprehensive script for training a facial expres
    - Handles imbalanced classes in the validation set using RandomOverSampler.
    - Creates separate TensorFlow datasets for training, validation, and testing.
 
-3. Data exploration:
-• Defines a function to print the shape of the training and validation dataset after oversampling
-• Prints the duration of the training, validation and test data sets
-• Prints the class distribution (number of samples in each class) in the training, validation, and testing datasets
-• Displays some random images from the training dataset with corresponding labels
-• Prints the names of the classes and their total number
-4. Building model:
-• Defines constants such as batch size, image size, initial periods, fine-tuning periods, total periods, base learning rate
-• Generates an incremental data sequence for random rotation, zoom and rotation
-5. VGG16 model:
-• Loads pre-trained VGG16 model with ImageNet weights, excluding top layer (freeze convolution base)
-• Defines complete model architecture with data augmentation, preprocessing for VGG16, global mean pooling, dense layers for classification.
-• Compiles the VGG16 model with the Adam optimizer, sparse stratified cross-entropy loss, and accuracy metric.
-• VGG16 model training for initial courses with early callback stop to monitor credit loss
-• Evaluates and plots training and validation accuracy and loss curves
-• Fine tunes the VGG16 model by building some trainable convolution layers
-• VGG16 model compilation tuned with RMSprop optimizer for fine tuning
-• Trains VGG16 tuned model for entire courses (initial + fine-tuning)
-• Combines training and validation losses and accuracy for both steps
-• Blended training and plots validity and reliability curves
+3. Data Exploration:
+
+  - Defines a function to print the shape of the training and validation dataset after oversampling.
+  - Prints the length (number of samples) of the training, validation and test datasets.
+  - Prints the class distribution (number of samples in each class) in the training, validation, and testing datasets.
+  - Displays some random images from the training dataset with corresponding labels.
+  - Prints the names of the classes and their total number.
+
+4. Building Model:
+
+  - Defines constants such as batch size, image size, initial epochs, fine-tuning epochs, total epochs, base learning rate.
+  - Generates a data augmentation sequence for random flipping, zooming, and rotation.
+
+5. VGG16 Model:
+
+  - Loads the pre-trained VGG16 model with ImageNet weights, excluding the top layer (freezing the convolutional base).
+  - Defines the complete model architecture with data augmentation, pre-processing for VGG16, global average pooling, and dense layers for classification.
+  - Compiles the VGG16 model with the Adam optimizer, sparse categorical cross-entropy loss, and accuracy metric.
+  - Trains the VGG16 model for initial epochs with early stopping callback to monitor validation loss.
+  - Evaluates and plots training and validation accuracy and loss curves.
+  - Fine-tunes the VGG16 model by making some convolutional layers trainable.
+  - Compiles the fine-tuned VGG16 model with RMSprop optimizer for fine-tuning.
+  - Trains the fine-tuned VGG16 model for total epochs (initial + fine-tuning).
+  - Combines training and validation losses and accuracy for both training stages.
+  - Plots the combined training and validation loss and accuracy curves.
+
 
 
 7. VGG19 Model (Similar to VGG16):
