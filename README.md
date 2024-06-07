@@ -3,8 +3,8 @@
 The provided code snippet is a comprehensive script for training a facial expression recognition model using transfer learning with pre-trained convolutional neural networks (CNNs). Here's a breakdown of the code:
 
 1. Setup:
-•	Installs Kaggle library
 
+•	Installs Kaggle library
 •	Imports necessary libraries for data manipulation, image processing, TensorFlow, and visualization
 
 •	Defines paths for data directories
