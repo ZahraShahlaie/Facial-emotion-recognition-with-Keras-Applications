@@ -75,35 +75,24 @@ The provided code snippet is a comprehensive script for training a facial expres
   - Combines training and validation losses and accuracy for both training stages.
   - Plots the combined training and validation loss and accuracy curves.
 
-
-
-7. VGG19 Model (Similar to VGG16):
-•	Repeats the same steps as VGG16 for VGG19, including model building, training, fine-tuning, and evaluation with plots
-8. ResNet50 Model (Similar to VGG16):
-•	Repeats the same steps as VGG16 for ResNet50, including model building, training, fine-tuning, and evaluation with plots
-9. MobileNetV2 Model (Similar to VGG16):
-    
-•	Repeats the same steps as VGG16 for MobileNetV2, including model building, training, fine-tuning, and evaluation with plots.
-
-9. MY Model :
-
+6. VGG19 Model (Similar to VGG16):
+  -	Repeats the same steps as VGG16 for VGG19, including model building, training, fine-tuning, and evaluation with plots
+7. ResNet50 Model (Similar to VGG16):
+  -	Repeats the same steps as VGG16 for ResNet50, including model building, training, fine-tuning, and evaluation with plots
+8. MobileNetV2 Model (Similar to VGG16).
+  -	Repeats the same steps as VGG16 for MobileNetV2, including model building, training, fine-tuning, and evaluation with plots.
 
 This script demonstrates transfer learning with pre-trained VGG16, VGG19, ResNet50 and MobileNetV2 models for facial expression recognition. It addresses imbalanced data using oversampling and visualizes the training process. You can experiment with different hyperparameters and explore other pre-trained models for potentially better performance.
 
-5. Custom Model (My Model)
-   
-•	This custom CNN architecture defines a model from scratch for facial expression recognition.
+9. Custom Model (My Model):
+  -This custom CNN architecture defines a model from scratch for facial expression recognition.
+  -The architecture employs convolutional layers for feature extraction, pooling layers for dimensionality reduction, dropout layers for regularization, and dense layers for classification.
+  - Hyperparameters like the number of filters, learning rate, and epochs can be tuned to improve performance.
+  - The code following the training section extracts training and validation accuracy/loss curves from the training history and visualizes them using Matplotlib.
 
-•	The architecture employs convolutional layers for feature extraction, pooling layers for dimensionality reduction, dropout layers for regularization, and dense layers for classification.
-
-•	Hyperparameters like the number of filters, learning rate, and epochs can be tuned to improve performance.
-
-•	The code following the training section extracts training and validation accuracy/loss curves from the training history and visualizes them using Matplotlib.
-
-7. Evaluation
-This section outlines the code for evaluating the performance of your facial expression recognition models:
-
-•	Evaluation Function:
+10. Evaluation:
+  -This section outlines the code for evaluating the performance of your facial expression recognition models:
+  Evaluation Function:
 
 o	evaluate_model(model, test_ds): This function takes a trained model and the testing dataset as input.
 
