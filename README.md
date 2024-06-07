@@ -30,24 +30,22 @@ This project processes a facial emotion recognition dataset, trains multiple mod
 The provided code snippet is a comprehensive script for training a facial expression recognition model using transfer learning with pre-trained convolutional neural networks (CNNs). Here's a breakdown of the code:
 
 1. Setup:
-
-   - Installs the Kaggle library (if necessary).
-   - Imports essential libraries for data manipulation, image processing, TensorFlow, and visualization.
-   - Defines paths to the data directories.
+  - Installs the Kaggle library (if necessary).
+  - Imports essential libraries for data manipulation, image processing, TensorFlow, and visualization.
+  - Defines paths to the data directories.
 
 2. Data Download and Preprocessing:
-
-   - Downloads the facial expression recognition dataset from Kaggle (if applicable).
-   - Extracts the downloaded zip file.
-   - Analyzes the training data:
-      - Identifies the number of images in each emotion class.
-      - Visualizes the class distribution using a bar chart.
-   - Addresses imbalanced classes in the training set using RandomOverSampler from the imbalanced-learn library.
-   - Analyzes the validation data:
-      - Reports the number of images in each emotion class.
-      - Visualizes the class distribution using a bar chart.
-   - Handles imbalanced classes in the validation set using RandomOverSampler.
-   - Creates separate TensorFlow datasets for training, validation, and testing.
+  -  Downloads the facial expression recognition dataset from Kaggle (if applicable).
+  - Extracts the downloaded zip file.
+  - Analyzes the training data:
+   - Identifies the number of images in each emotion class.
+   - Visualizes the class distribution using a bar chart.
+  -  Addresses imbalanced classes in the training set using RandomOverSampler from the imbalanced-learn library.
+  - Analyzes the validation data:
+   - Reports the number of images in each emotion class.
+   - Visualizes the class distribution using a bar chart.
+  - Handles imbalanced classes in the validation set using RandomOverSampler.
+  - Creates separate TensorFlow datasets for training, validation, and testing.
 
 3. Data Exploration:
 
@@ -85,7 +83,7 @@ The provided code snippet is a comprehensive script for training a facial expres
 This script demonstrates transfer learning with pre-trained VGG16, VGG19, ResNet50 and MobileNetV2 models for facial expression recognition. It addresses imbalanced data using oversampling and visualizes the training process. You can experiment with different hyperparameters and explore other pre-trained models for potentially better performance.
 
 9. Custom Model (My Model):
-  -This custom CNN architecture defines a model from scratch for facial expression recognition.
+  - This custom CNN architecture defines a model from scratch for facial expression recognition.
   -The architecture employs convolutional layers for feature extraction, pooling layers for dimensionality reduction, dropout layers for regularization, and dense layers for classification.
   - Hyperparameters like the number of filters, learning rate, and epochs can be tuned to improve performance.
   - The code following the training section extracts training and validation accuracy/loss curves from the training history and visualizes them using Matplotlib.
