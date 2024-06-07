@@ -4,9 +4,12 @@ The provided code snippet is a comprehensive script for training a facial expres
 
 1. Setup:
 •	Installs Kaggle library
+
 •	Imports necessary libraries for data manipulation, image processing, TensorFlow, and visualization
+
 •	Defines paths for data directories
-2. Data Download and Preprocessing:
+
+3. Data Download and Preprocessing:
 •	Downloads the facial expression recognition dataset from Kaggle
 •	Extracts the downloaded zip file
 •	Identifies the number of images in each emotion class of the training data and visualizes it using a bar chart
@@ -14,16 +17,16 @@ The provided code snippet is a comprehensive script for training a facial expres
 •	Reports the number of images in each emotion class of the validation data and visualizes it using a bar chart
 •	Handles imbalanced data in the validation set using RandomOverSampler
 •	Creates TensorFlow datasets for training, validation, and testing
-3. Data Exploration:
+4. Data Exploration:
 •	Defines a function to print the shapes of training and validation datasets after oversampling
 •	Prints the length of training, validation, and test datasets
 •	Prints the class distribution (number of samples per class) in training, validation, and test datasets
 •	Displays some random images from the training dataset with their corresponding labels
 •	Prints the class names and their total count
-4. Model Building:
+5. Model Building:
 •	Defines constants like batch size, image size, initial epochs, fine-tuning epochs, total epochs, base learning rate
 •	Creates a data augmentation sequence for random flipping, zooming, and rotation
-5. VGG16 Model:
+6. VGG16 Model:
 •	Loads the pre-trained VGG16 model with ImageNet weights, excluding the top layer (freeze the convolutional base)
 •	Defines the complete model architecture with data augmentation, pre-processing for VGG16, global average pooling, dense layers for classification
 •	Compiles the VGG16 model with Adam optimizer, sparse categorical cross-entropy loss, and accuracy metric
@@ -34,11 +37,11 @@ The provided code snippet is a comprehensive script for training a facial expres
 •	Trains the fine-tuned VGG16 model for total epochs (initial + fine-tuning)
 •	Combines training and validation losses and accuracies for both stages
 •	Plots the combined training and validation loss and accuracy curves
-6. VGG19 Model (Similar to VGG16):
+7. VGG19 Model (Similar to VGG16):
 •	Repeats the same steps as VGG16 for VGG19, including model building, training, fine-tuning, and evaluation with plots
-7. ResNet50 Model (Similar to VGG16):
+8. ResNet50 Model (Similar to VGG16):
 •	Repeats the same steps as VGG16 for ResNet50, including model building, training, fine-tuning, and evaluation with plots
-8. MobileNetV2 Model (Similar to VGG16):
+9. MobileNetV2 Model (Similar to VGG16):
 •	Repeats the same steps as VGG16 for MobileNetV2, including model building, training, fine-tuning, and evaluation with plots
 
 This script demonstrates transfer learning with pre-trained VGG16, VGG19, ResNet50 and MobileNetV2 models for facial expression recognition. It addresses imbalanced data using oversampling and visualizes the training process. You can experiment with different hyperparameters and explore other pre-trained models for potentially better performance.
