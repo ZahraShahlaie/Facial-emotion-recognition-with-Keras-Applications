@@ -8,21 +8,16 @@ This project involves training a facial emotion recognition model using transfer
 
 ## Table of Contents
 - [Introduction](#introduction)
-- [Features](#features)
+- [Summary Features](#Summary Features)
 - [Installation](#installation)
 - [Usage](#usage)
-- [Results](#results)
-- [Evaluation](#evaluation)
-- [Prediction](#prediction)
-- [Visualization](#visualization)
-- [Model Saving](#model-saving)
 - [Contributing](#contributing)
-- [License](#license)
+
 
 ## Introduction
 This project processes a facial emotion recognition dataset, trains multiple models using transfer learning, and evaluates their performance. The script includes handling imbalanced data, visualizing data distributions, and reporting results.
 
-## Features
+##  Summary Features
 - Downloads and preprocesses a facial emotion recognition dataset from Kaggle.
 - Handles imbalanced data using RandomOverSampler.
 - Uses transfer learning with pre-trained models (VGG16, VGG19, ResNet50, MobileNetV2).
@@ -61,6 +56,4 @@ Contributions are welcome! Please fork the repository and create a pull request 
 
 
 
----
 
-Feel free to customize this README further based on your specific project details and requirements. If you have any questions or need additional information included, let me know!
