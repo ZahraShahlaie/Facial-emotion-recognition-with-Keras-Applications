@@ -8,7 +8,7 @@ This project involves training a facial emotion recognition model using transfer
 
 ## Table of Contents
 - [Introduction](#introduction)
-- [Summary Features](#Summary Features)
+- [Summary Features](#SummaryFeatures)
 - [Installation](#installation)
 - [Usage](#usage)
 - [Contributing](#contributing)
