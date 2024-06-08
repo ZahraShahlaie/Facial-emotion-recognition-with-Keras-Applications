@@ -90,15 +90,15 @@ This script demonstrates transfer learning with pre-trained VGG16, VGG19, ResNet
   - The code following the training section extracts training and validation accuracy/loss curves from the training history and visualizes them using Matplotlib.
 
 10. Evaluation:
-  -This section outlines the code for evaluating the performance of your facial expression recognition models:
+  - This section outlines the code for evaluating the performance of your facial expression recognition models:
   Evaluation Function:
-  -evaluate_model(model, test_ds): This function takes a trained model and the testing dataset as input.
-  -It calculates the test loss and accuracy using the model's evaluate method.
-  -Extracts true labels from the test dataset and predicted labels from the model's predictions on the test data.
-  -Creates a confusion matrix using sklearn.metrics.confusion_matrix to visualize how often the model predicted each class correctly or incorrectly.
-  -Plots the confusion matrix using Seaborn (sns.heatmap) with annotations (annot=True) for clarity.
-  -Generates a classification report using sklearn.metrics.classification_report to provide detailed information about the model's performance on each class.
-  -Returns the test accuracy for comparison purposes.
+  - evaluate_model(model, test_ds): This function takes a trained model and the testing dataset as input.
+  - It calculates the test loss and accuracy using the model's evaluate method.
+  - Extracts true labels from the test dataset and predicted labels from the model's predictions on the test data.
+  - Creates a confusion matrix using sklearn.metrics.confusion_matrix to visualize how often the model predicted each class correctly or incorrectly.
+  - Plots the confusion matrix using Seaborn (sns.heatmap) with annotations (annot=True) for clarity.
+  - Generates a classification report using sklearn.metrics.classification_report to provide detailed information about the model's performance on each class.
+  - Returns the test accuracy for comparison purposes.
 
 •	Evaluating Pre-trained Models (if applicable):
   - The code iterates through your pre-trained models (assuming model_vgg16, model_vgg19, model_resNet50, and potentially model_mobileNetV2) and calls the evaluate_model function for each model with the testing dataset.
