@@ -1,6 +1,3 @@
-Sure, here's a detailed README file for your facial emotion recognition project using Keras applications:
-
----
 
 # Facial Emotion Recognition with Keras Applications
 
