@@ -1,5 +1,7 @@
+I published two posts on LinkedIn reporting the results of this project:
 
 
-https://www.linkedin.com/posts/zahrashahlaie_artificialintelligence-deeplearning-facialrecognition-activity-7205131702535385088-BqSU?utm_source=share&utm_medium=member_desktop
+- [Post 1](https://www.linkedin.com/posts/zahrashahlaie_artificialintelligence-deeplearning-facialrecognition-activity-7205131702535385088-BqSU?utm_source=share&utm_medium=member_desktop)
+- [Post 2](https://www.linkedin.com/posts/zahrashahlaie_datascience-machinelearning-ai-activity-7204979418497183744-yK6z?utm_source=share&utm_medium=member_desktop)
 
-https://www.linkedin.com/posts/zahrashahlaie_datascience-machinelearning-ai-activity-7204979418497183744-yK6z?utm_source=share&utm_medium=member_desktop
+
